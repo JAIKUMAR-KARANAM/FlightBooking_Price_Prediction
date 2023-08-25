@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Price Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top bg-light">
+        <div class="container-fluid">
+            <div class="navbar-header " >
+                <a class="navbar-brand" href="/home"><b>FLIGHT PRICE PREDICTION </b></a></div>
+        </div>
+    </nav>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+          <p>Optimizing Flight Booking Decisions through Machine Learning Price Predictions.</p>
+        </blockquote>
+        
+      </figure>
+
+    <br><br>
+
+
+    <div class="container">
+
+        <h1>Flight Details</h1>
+        <br>
+        <table class="table table-hover" >
+            <thead>
+              <tr>
+                <th scope="col"> </th>
+                <th scope="col">Category</th>
+                <th scope="col">Details</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Date of Departure</td>
+                <td>{{dodep}}</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Date of Arrival</td>
+                <td>{{doa}}</td>
+              
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Source</td>
+                <td>{{src}}</td>
+              
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Destination</td>
+                <td>{{des}}</td>
+              
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Airline</td>
+                <td>{{stream}}</td>
+              
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>No of stops</td>
+                <td>{{stops}}</td>
+              
+              </tr>
+              <tr>
+                <hr>
+                <th scope="row"></th>
+                <td><b>Total Price for fly</b></td>
+                <td><b>RS. {{price}}</b></td>
+              
+              </tr>
+          
+            </tbody>
+          </table>
+          <hr>
+          <hr>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+        <figure class="text-center">
+        
+            <figcaption class="blockquote-footer">
+              <cite title="Source Title">K.H.Jaikumar</cite>
+            </figcaption>
+          </figure>
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
